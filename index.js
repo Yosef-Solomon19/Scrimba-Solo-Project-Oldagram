@@ -44,9 +44,11 @@ containerEl.append(imgEl);
 // What I've done: Drew layout of what the oldagram should look like 
 //                 Dynamically load image from object to html 
 //                 Figured out why image in side div has space in the bottom
-//                  https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image
+//                 https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image
 // 
 // Issue's encountered: Why there was space on the bottom of image inside div "Solved"
 // 
 // What's left: HTML Structure 
 //              then CSS, then JS 
+// Links : 
+//    Create elements with attributes, https://bobbyhadz.com/blog/javascript-create-element-with-attributes
