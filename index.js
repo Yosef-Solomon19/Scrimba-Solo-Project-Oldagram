@@ -1,5 +1,6 @@
 "use strict"; 
 
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -29,3 +30,7 @@ const posts = [
         likes: 152
     }
 ]
+
+
+const cmtEl = document.getElementById("comment");
+cmtEl.textContent = `${posts[0].avatar}`
