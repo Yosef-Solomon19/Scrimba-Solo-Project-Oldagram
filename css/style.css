@@ -1,4 +1,35 @@
 
 body {
     margin: 0;
+    text-align: center;    
+    
 }
+main {
+    width: 375px; 
+    margin: 0 auto;
+    border: 1px solid gold;
+}
+
+.img-container {
+    margin: 0 auto;
+    width: 375px;
+    border: 1px solid red;
+    margin-bottom: 0;
+}
+
+.img-container img {
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.img-1 {
+    width: 200px;
+    border: 1px solid green;
+}
+
+/* Issue: image inside div has extra space in the bottom 
+    Why:  image rendered inline, like a letter there is space for descenders like q, p, etc.
+    soln: display: block */

@@ -6,10 +6,10 @@ const posts = [
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "images/post-vangogh.jpg",
+        avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
-        comment: "just took a few mushoom",
-        likes: 21         
+        comment: "just took a few mushrooms lol",
+        likes: 21
     },
     {
         name: "Gustave Courbet",
@@ -30,7 +30,21 @@ const posts = [
         likes: 152
     }
 ]
+const containerEl = document.getElementById("img-post");
+const imgEl = document.createElement("img"); 
+imgEl.setAttribute("src", posts[0].post);
+imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
+containerEl.append(imgEl);
+
+// const imgPostEL = document.getElementById("img-post");
+// imgPostEL.innerHTML = `<img src="${posts[0].post}">`;
 
 
-const cmtEl = document.getElementById("comment");
-cmtEl.textContent = `${posts[0].avatar}`
+// **** 1/09/2022****
+// What I've done: Drew layout of what the oldagram should look like 
+//                 Dynamically load image from object to html 
+//                 Figured out why image in side div has space in the bottom
+// Issue's encountered: Why there was space on the bottom of image inside div "Solved"
+// 
+// What's left: HTML Structure 
+//              then CSS, then JS 
