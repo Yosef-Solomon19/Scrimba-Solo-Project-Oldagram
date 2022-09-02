@@ -29,12 +29,15 @@ main {
 }
 
 header {
+    padding-top: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #C6C6C6;
 }
 
 .profile {
+    margin-left: 10px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -47,6 +50,7 @@ header {
 }
 .avatar {
     width: 34px;
+    border-radius: 50%;
 }
 
 /* .avatar, .logo {
@@ -55,9 +59,9 @@ header {
 
 .profile-img {
     /* border: 1px solid red; */
-    width: 34px;
-    
+    width: 34px;    
     margin-right: 5px;
+    border-radius: 50%;
 }
 
 
