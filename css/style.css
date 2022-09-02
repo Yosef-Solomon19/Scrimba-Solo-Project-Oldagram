@@ -22,7 +22,7 @@ p {
 }
 
 /* Layout */
-main {
+.container {
     width: 375px; 
     margin: 0 auto;
     border: 1px solid gold;
@@ -44,7 +44,6 @@ header {
 }
 
 /* Image */
-
 .logo {
     width: 127px;
 }
@@ -53,17 +52,12 @@ header {
     border-radius: 50%;
 }
 
-/* .avatar, .logo {
-    display: block;
-} */
-
 .profile-img {
     /* border: 1px solid red; */
     width: 34px;    
     margin-right: 5px;
     border-radius: 50%;
 }
-
 
 .img-container {
     margin: 0 auto;
@@ -76,8 +70,13 @@ header {
     margin-bottom: 0;
     width: 100%;
     height: auto;
-    display: block;
-    
+    display: block;    
+}
+
+.comment-section
+
+.comment-icons {
+    width: 22px;
 }
 
 /* .img-1 {
