@@ -2,18 +2,30 @@
 body {
     margin: 0;
     text-align: center;    
+    background-color: rgb(142, 140, 136);
     
 }
+
+/* Typography */
+
+/* Layout */
 main {
     width: 375px; 
     margin: 0 auto;
     border: 1px solid gold;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image */
 .img-container {
     margin: 0 auto;
     width: 375px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 0;
 }
 
@@ -28,6 +40,18 @@ main {
 .img-1 {
     width: 200px;
     border: 1px solid green;
+}
+
+.logo {
+    width: 127px;
+}
+.avatar {
+    width: 34px;
+    height: 34px;
+}
+
+.avatar, .logo {
+    display: inline-block;
 }
 
 /* Issue: image inside div has extra space in the bottom 
