@@ -2,11 +2,24 @@
 body {
     margin: 0;
     text-align: center;    
-    background-color: rgb(142, 140, 136);
+    /* background-color: rgb(142, 140, 136); */
     
 }
 
 /* Typography */
+p {
+    font-size: 13px;
+    text-align: start; 
+}
+
+
+.profile-name {
+    margin-bottom: 0;
+}
+
+.profile-location { 
+    margin-top: 0;    
+}
 
 /* Layout */
 main {
@@ -21,12 +34,38 @@ header {
     align-items: center;
 }
 
+.profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 /* Image */
+
+.logo {
+    width: 127px;
+}
+.avatar {
+    width: 34px;
+}
+
+/* .avatar, .logo {
+    display: block;
+} */
+
+.profile-img {
+    /* border: 1px solid red; */
+    width: 34px;
+    
+    margin-right: 5px;
+}
+
+
 .img-container {
     margin: 0 auto;
     width: 375px;
     /* border: 1px solid red; */
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .img-container img {
@@ -37,22 +76,11 @@ header {
     
 }
 
-.img-1 {
+/* .img-1 {
     width: 200px;
     border: 1px solid green;
-}
+} */
 
-.logo {
-    width: 127px;
-}
-.avatar {
-    width: 34px;
-    height: 34px;
-}
-
-.avatar, .logo {
-    display: inline-block;
-}
 
 /* Issue: image inside div has extra space in the bottom 
     Why:  image rendered inline, like a letter there is space for descenders like q, p, etc.
