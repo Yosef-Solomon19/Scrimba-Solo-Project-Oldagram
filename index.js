@@ -52,3 +52,15 @@ containerEl.append(imgEl);
 //              then CSS, then JS 
 // Links : 
 //    Create elements with attributes, https://bobbyhadz.com/blog/javascript-create-element-with-attributes
+
+
+// **** 2/09/2022****
+// What I've done: Add structure & content to header section, 
+//                 Add structure, content & styling to profile section below header
+// Issue's encountered: not really, did have a small issue with aligning text on top of eachother
+//                      Which was solved by setting the text-align to start.
+//                      Since that rule was set in the p selector I'll have to check
+//                      how it affects other paragraphs 
+//  What's left: HTML structure for comment section, CSS style 
+//               See if its possible to render out the post via JS
+// Links: none

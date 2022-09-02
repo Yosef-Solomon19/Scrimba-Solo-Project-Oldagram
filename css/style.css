@@ -43,6 +43,10 @@ header {
     align-items: center;
 }
 
+/* .profile-info {
+    text-align: start;
+} */
+
 /* Image */
 .logo {
     width: 127px;
@@ -73,7 +77,9 @@ header {
     display: block;    
 }
 
-.comment-section
+.comment-section{
+
+}
 
 .comment-icons {
     width: 22px;
