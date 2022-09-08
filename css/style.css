@@ -3,7 +3,8 @@ body {
     margin: 0;
     text-align: center;    
     /* background-color: rgb(142, 140, 136); */
-    background-color: #43ABC9
+    background-color: #323a45;
+    font-family: 'Source Sans Pro', sans-serif; 
     
 }
 
@@ -11,6 +12,10 @@ body {
 p {
     font-size: 13px;
     text-align: start; 
+}
+
+.bold-text {
+    font-weight: 900;
 }
 
 
@@ -27,7 +32,7 @@ p {
     width: 375px; 
     margin: 0 auto;
     /* border: 1px solid gold; */
-    background-color: aliceblue;
+    background-color: #ffffff;
 }
 
 header {
@@ -39,7 +44,7 @@ header {
 }
 
 .profile {
-    margin-left: 10px;
+    margin: 0 0 0 10px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -48,7 +53,7 @@ header {
 /* Comment Section */
 
 .comment-section {
-    margin: 21px 19px 16px 10px;
+    margin: 15px 19px 35px 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -70,6 +75,12 @@ header {
 .comment {
     margin-top: 12px;
 }
+
+section .comment-section p span  {
+    /* border: 1px solid red; */
+    margin-right: 5px;
+}
+
 
 
 

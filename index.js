@@ -64,3 +64,12 @@ containerEl.append(imgEl);
 //  What's left: HTML structure for comment section, CSS style 
 //               See if its possible to render out the post via JS
 // Links: none
+
+// **** 09/09/2022****
+// What I've done: Imported font from google, add utility class to have bold text on certain content 
+//                  Completed styling comment section 
+//                  Changed background color for accessibility 
+// Issue's encountered: None so far 
+// What's left: Add hover effects to icons 
+//              Refactor html to render out all three posts using Js
+//              increase the likes when double clicking the img post.               
