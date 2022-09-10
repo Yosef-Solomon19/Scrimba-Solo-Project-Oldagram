@@ -84,3 +84,5 @@ containerEl.append(imgEl);
 //              Refactor html to render out all three posts using Js
 //              increase the likes when double clicking the img post. 
 
+// **** 09/09/2022****
+// What I've done: 

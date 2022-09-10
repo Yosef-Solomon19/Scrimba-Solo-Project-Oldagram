@@ -116,11 +116,12 @@ section .comment-section p span  {
 }
 
 /* Hover Effects  */
-/* .hover-heart:hover{
-    width: 23px;
-    background-image: url("../images/hover_cmt_icons/heart.png");
+.comment-icons:hover,
+.cooment-icons:focus {
     cursor: pointer;
-} */
+    /* border: 1px solid red; */
+    filter: invert(12%) sepia(73%) saturate(3797%) hue-rotate(346deg) brightness(99%) contrast(93%); 
+}
 
 
 /* .img-1 {
