@@ -84,5 +84,11 @@ containerEl.append(imgEl);
 //              Refactor html to render out all three posts using Js
 //              increase the likes when double clicking the img post. 
 
-// **** 09/09/2022****
-// What I've done: 
+
+// **** 10/09/2022****
+// What I've done: Styled the hover effects 
+// Issue's encountered: Figuring out how to change the color of icon images w/out having to create new images from figma 
+// Soln: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css codepen example to convert icon to target hex color 
+//       ASSUMING icon is black originally. 
+// What's left: Refactor html to render out all three posts using Js
+//              increase the likes when double clicking the img post. 
