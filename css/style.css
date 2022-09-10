@@ -116,11 +116,8 @@ section .comment-section p span  {
 }
 
 /* Hover Effects  */
-.comment-icons:hover,
-.comment-icons:focus {
-    background-image: url();
-    cursor: pointer;
-
+.hover-heart:hover {
+    background-image: url(like.);
 }
 
 
