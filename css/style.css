@@ -116,9 +116,11 @@ section .comment-section p span  {
 }
 
 /* Hover Effects  */
-.hover-heart:hover {
-    background-image: url(like.);
-}
+/* .hover-heart:hover{
+    width: 23px;
+    background-image: url("../images/hover_cmt_icons/heart.png");
+    cursor: pointer;
+} */
 
 
 /* .img-1 {
