@@ -40,6 +40,14 @@ containerEl.append(imgEl);
 // imgPostEL.innerHTML = `<img src="${posts[0].post}">`;
 
 
+
+
+
+
+
+
+
+
 // **** 1/09/2022****
 // What I've done: Drew layout of what the oldagram should look like 
 //                 Dynamically load image from object to html 
@@ -65,6 +73,8 @@ containerEl.append(imgEl);
 //               See if its possible to render out the post via JS
 // Links: none
 
+
+
 // **** 09/09/2022****
 // What I've done: Imported font from google, add utility class to have bold text on certain content 
 //                  Completed styling comment section 
@@ -72,4 +82,5 @@ containerEl.append(imgEl);
 // Issue's encountered: None so far 
 // What's left: Add hover effects to icons 
 //              Refactor html to render out all three posts using Js
-//              increase the likes when double clicking the img post.               
+//              increase the likes when double clicking the img post. 
+
