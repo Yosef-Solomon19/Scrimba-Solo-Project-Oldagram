@@ -30,11 +30,55 @@ const posts = [
         likes: 152
     }
 ]
-const containerEl = document.getElementById("img-post");
+// *** Rendering post ***
+
+// Select main element
+const mainEl = document.querySelector(".container");
+
+// Create section element and add it to main El
+const createSectionEl = document.createElement("section");
+// createSectionEl.classList.add("test-border");
+mainEl.append(createSectionEl); 
+
+// Create profile 
+const profileSection = document.createElement("div");
+profileSection.classList.add("profile");
+
+const imgProfile = document.createElement("img");
+imgProfile.classList.add("profile-img");
+imgProfile.setAttribute("src", posts[0].avatar);
+imgProfile.setAttribute("alt", `Portrait of ${posts[0].avatar}`);
+
+const profileInfo = document.createElement("div");
+profileSection.classList.add("profile-info");
+
+// Create porfile name and location element
+const profileName = document.createElement();
+
+{/* <p class="profile-name bold-text" id="user-name"> Vincent van Gogh</p>
+<p class="profile-location" id="user-location"> Zudert, Netherlands</p> */}
+
+
+
+
+
+
+
+
+const imgContainerEl = document.getElementById("img-post");
 const imgEl = document.createElement("img"); 
 imgEl.setAttribute("src", posts[0].post);
 imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
-containerEl.append(imgEl);
+imgContainerEl.append(imgEl);
+
+
+
+
+
+
+// for ( let i = 0; i < posts.length; i++) {
+//     console.log(i);
+// }
 
 // const imgPostEL = document.getElementById("img-post");
 // imgPostEL.innerHTML = `<img src="${posts[0].post}">`;
@@ -92,3 +136,10 @@ containerEl.append(imgEl);
 //       ASSUMING icon is black originally. 
 // What's left: Refactor html to render out all three posts using Js
 //              increase the likes when double clicking the img post. 
+
+
+// **** 12/09/2022  **** 
+// What I've done: Starting to refactor by create semantic html and elements in JS. 
+//                 My plan is to have each post rendered out based on the number of items in each array. 
+// Issue's encountered : none, just needed to find pages to learn how to create elements, attribute, etc 
+// What's left: ---
