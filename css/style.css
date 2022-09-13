@@ -132,3 +132,8 @@ section .comment-section p span  {
 /* Issue: image inside div has extra space in the bottom 
     Why:  image rendered inline, like a letter there is space for descenders like q, p, etc.
     soln: display: block */
+
+
+.test-border {
+    border: 1px solid red;
+}
