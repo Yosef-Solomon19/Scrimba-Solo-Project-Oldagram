@@ -41,36 +41,36 @@ const createSectionEl = document.createElement("section");
 mainEl.append(createSectionEl); 
 
 // Create profile 
-const profileSection = document.createElement("div");
-profileSection.classList.add("profile");
+const profileSectionEl = document.createElement("div");
+profileSectionEl.classList.add("profile");
 
 // Create img element
-const imgProfile = document.createElement("img");
-imgProfile.classList.add("profile-img");
-imgProfile.setAttribute("src", posts[0].avatar);
-imgProfile.setAttribute("alt", `Portrait of ${posts[0].avatar}`);
+const imgProfileEl = document.createElement("img");
+imgProfileEl.classList.add("profile-img");
+imgProfileEl.setAttribute("src", posts[0].avatar);
+imgProfileEl.setAttribute("alt", `Portrait of ${posts[0].avatar}`);
 
 // Create div for profile info
-const profileInfo = document.createElement("div");
-profileSection.classList.add("profile-info");
+const profileInfoEl = document.createElement("div");
+profileSectionEl.classList.add("profile-info");
 
 // Create porfile name and location element
-const profileName = document.createElement("p");
-profileName.setAttribute("id", "user-name");
-profileName.classList.add("profile-name");
-profileName.classList.add("bold-text");
-profileName.textContent = `${posts[0].name}`;
+const profileNameEl = document.createElement("p");
+profileNameEl.setAttribute("id", "user-name");
+profileNameEl.classList.add("profile-name");
+profileNameEl.classList.add("bold-text");
+profileNameEl.textContent = `${posts[0].name}`;
 
-const profileLocation = document.createElement("p");
-profileLocation.setAttribute("id", "user-location");
-profileLocation.classList.add("profile-location");
-profileLocation.textContent = `${posts[0].location}`;
+const profileLocationEl = document.createElement("p");
+profileLocationEl.setAttribute("id", "user-location");
+profileLocationEl.classList.add("profile-location");
+profileLocationEl.textContent = `${posts[0].location}`;
 
-// add profileName & profileLocation to profileInfo, then add imgProfile & profileInfo to 
-// profileSection then add that to that to create section.
-profileInfo.append(profileName, profileLocation);
-profileSection.append(imgProfile, profileInfo);
-createSectionEl.append(profileSection);
+// add profileNameEl & profileLocationEl to profileInfoEl, then add imgProfileEl & profileInfoEl to 
+// profileSectionEl then add that to that to create section.
+profileInfoEl.append(profileNameEl, profileLocationEl);
+profileSectionEl.append(imgProfileEl, profileInfoEl);
+createSectionEl.append(profileSectionEl);
 
 // create div with class for img post and create img tag
 const imgContainerEl = document.createElement("div")
@@ -84,30 +84,49 @@ imgContainerEl.append(imgEl);
 createSectionEl.append(imgContainerEl);
 
 // create 2 divs: 1st child div containing the comment icons
-//                parent div containing 2 p tags and child
+//                parent div containing 2 p tags w/ a span and child div
+const cmntSectionEl = document.createElement("div");
+cmntSectionEl.classList.add("comment-section");
+const iconSectionEl = document.createElement("div");
+iconSectionEl.classList.add("icon-section");
 
+// Create img tags for comment icons
+// Create img elements
+const iconHeartEl = document.createElement("img");
+iconHeartEl.classList.add("comment-icons")
+iconHeartEl.setAttribute("src", "images/icon-heart.png")
+iconHeartEl.setAttribute("alt", `Heart icon`);
 
+const iconCmntEl = document.createElement("img");
+iconCmntEl.classList.add("comment-icons")
+iconCmntEl.setAttribute("src", "images/icon-comment.png")
+iconCmntEl.setAttribute("alt", `Comment icon`);
 
-// add to section
-// createSectionEl.append(profileSection);
+const iconDmEl = document.createElement("img");
+iconDmEl.classList.add("comment-icons")
+iconDmEl.setAttribute("src", "images/icon-dm.png")
+iconDmEl.setAttribute("alt", `Direct Message icon`);
 
+// Add the images to icon section div
+iconSectionEl.append(iconHeartEl, iconCmntEl, iconDmEl);
 
+// Create 2 p tags with the 2nd p container span 
+const likeSectionEl = document.createElement("p");
+likeSectionEl.classList.add("like-section");
+likeSectionEl.classList.add("bold-text");
+likeSectionEl.textContent = `${posts[0].likes} likes`;
 
-{/* <p class="profile-name bold-text" id="user-name"> Vincent van Gogh</p>
-<p class="profile-location" id="user-location"> Zudert, Netherlands</p> */}
+const cmntEl = document.createElement("p"); 
+cmntEl.classList.add("comment");
+const userNameEl = document.createElement("span");
+userNameEl.classList.add("bold-text")
+userNameEl.setAttribute("id", "user-name")
+userNameEl.textContent = `${posts[0].username}`;
+cmntEl.append(userNameEl);
 
+cmntSectionEl.append(iconSectionEl, likeSectionEl, cmntEl);
+createSectionEl.append(cmntSectionEl);
 
-
-
-
-
-
-
-// const imgContainerEl = document.getElementById("img-post");
-// const imgEl = document.createElement("img"); 
-// imgEl.setAttribute("src", posts[0].post);
-// imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
-// imgContainerEl.append(imgEl);
 
 
 
