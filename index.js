@@ -44,16 +44,54 @@ mainEl.append(createSectionEl);
 const profileSection = document.createElement("div");
 profileSection.classList.add("profile");
 
+// Create img element
 const imgProfile = document.createElement("img");
 imgProfile.classList.add("profile-img");
 imgProfile.setAttribute("src", posts[0].avatar);
 imgProfile.setAttribute("alt", `Portrait of ${posts[0].avatar}`);
 
+// Create div for profile info
 const profileInfo = document.createElement("div");
 profileSection.classList.add("profile-info");
 
 // Create porfile name and location element
-const profileName = document.createElement();
+const profileName = document.createElement("p");
+profileName.setAttribute("id", "user-name");
+profileName.classList.add("profile-name");
+profileName.classList.add("bold-text");
+profileName.textContent = `${posts[0].name}`;
+
+const profileLocation = document.createElement("p");
+profileLocation.setAttribute("id", "user-location");
+profileLocation.classList.add("profile-location");
+profileLocation.textContent = `${posts[0].location}`;
+
+// add profileName & profileLocation to profileInfo, then add imgProfile & profileInfo to 
+// profileSection then add that to that to create section.
+profileInfo.append(profileName, profileLocation);
+profileSection.append(imgProfile, profileInfo);
+createSectionEl.append(profileSection);
+
+// create div with class for img post and create img tag
+const imgContainerEl = document.createElement("div")
+imgContainerEl.classList.add("img-container");
+imgContainerEl.setAttribute("id", "img-post");
+const imgEl = document.createElement("img");
+imgEl.setAttribute("src", posts[0].post);
+imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
+imgContainerEl.append(imgEl);
+// Add imgContainer div to section
+createSectionEl.append(imgContainerEl);
+
+// create 2 divs: 1st child div containing the comment icons
+//                parent div containing 2 p tags and child
+
+
+
+// add to section
+// createSectionEl.append(profileSection);
+
+
 
 {/* <p class="profile-name bold-text" id="user-name"> Vincent van Gogh</p>
 <p class="profile-location" id="user-location"> Zudert, Netherlands</p> */}
@@ -65,11 +103,11 @@ const profileName = document.createElement();
 
 
 
-const imgContainerEl = document.getElementById("img-post");
-const imgEl = document.createElement("img"); 
-imgEl.setAttribute("src", posts[0].post);
-imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
-imgContainerEl.append(imgEl);
+// const imgContainerEl = document.getElementById("img-post");
+// const imgEl = document.createElement("img"); 
+// imgEl.setAttribute("src", posts[0].post);
+// imgEl.setAttribute("alt", `Self-portrait of ${posts[0].name}`)
+// imgContainerEl.append(imgEl);
 
 
 
@@ -142,4 +180,5 @@ imgContainerEl.append(imgEl);
 // What I've done: Starting to refactor by create semantic html and elements in JS. 
 //                 My plan is to have each post rendered out based on the number of items in each array. 
 // Issue's encountered : none, just needed to find pages to learn how to create elements, attribute, etc 
-// What's left: ---
+// What's left: Refactor html to render out all three posts using Js
+//              increase the likes when double clicking the img post.
