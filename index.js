@@ -201,3 +201,18 @@ createSectionEl.append(cmntSectionEl);
 // Issue's encountered : none, just needed to find pages to learn how to create elements, attribute, etc 
 // What's left: Refactor html to render out all three posts using Js
 //              increase the likes when double clicking the img post.
+
+// **** 12/09/2022  **** 
+// What I've done: Starting to refactor by create semantic html and elements in JS. 
+//                 My plan is to have each post rendered out based on the number of items in each array. 
+// Issue's encountered : none, just needed to find pages to learn how to create elements, attribute, etc 
+// What's left: Refactor html to render out all three posts using Js
+//              increase the likes when double clicking the img post.
+
+// **** 14/09/2022  **** 
+// What I've done: So I managed to recreate everything from html to js
+//                 My plan is to have each post rendered out based on the number of items in each array. 
+// Issue's encountered : none,
+// What's left: Refactor html to render out all three posts using Js then use for loop to 
+//              dynamically create the posts for each item in array.
+//              increase the likes when double clicking the img post.
