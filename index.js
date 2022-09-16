@@ -238,19 +238,6 @@ console.log(check[0]);
 
 
 
-// for ( let i = 0; i < posts.length; i++) {
-//     console.log(i);
-// }
-
-// const imgPostEL = document.getElementById("img-post");
-// imgPostEL.innerHTML = `<img src="${posts[0].post}">`;
-
-
-
-
-
-
-
 
 
 
@@ -321,3 +308,15 @@ console.log(check[0]);
 // What's left: Refactor html to render out all three posts using Js then use for loop to 
 //              dynamically create the posts for each item in array.
 //              increase the likes when double clicking the img post.
+
+
+
+// **** 16/09/2022  **** 
+// What I've done: I managed to recreate everything from html to js by 
+//                 creating a for loop containing the html code created inside the section element.
+//                 effectively creating three posts.
+// Issue's encountered : Since each post is created dynamically how do I add an event listener for each posts
+//                       so that when the img is double clicked it'll increase the likes?
+// What's left: Add an object stored inside of an array ? that contains the id of each img and each likes
+//              Then add event listeners for each image from the array
+//              
