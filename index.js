@@ -319,4 +319,4 @@ console.log(check[0]);
 //                       so that when the img is double clicked it'll increase the likes?
 // What's left: Add an object stored inside of an array ? that contains the id of each img and each likes
 //              Then add event listeners for each image from the array
-//              
+// Link: https://www.educative.io/answers/how-to-add-an-eventlistener-to-multiple-elements-in-javascript
