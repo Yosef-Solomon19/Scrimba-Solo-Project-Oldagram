@@ -77,13 +77,6 @@ function addLike(likeId) {
     const likeSectionEl = document.getElementById(likeId); 
     likeSectionEl.textContent = `${incrLikeCnt} likes`;
 }
-// clickPostArr.forEach(img => {
-//     img.addEventListener("dblclick", function() {
-//        
-//         alert("img clicked");
-//         })
-//     })
-
 
 
 // **** 1/09/2022****
