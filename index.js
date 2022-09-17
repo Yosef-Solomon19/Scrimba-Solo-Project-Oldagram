@@ -49,7 +49,8 @@ for(let i = 0; i < posts.length; i++) {
                                     </div>
                                 </div>
                                 <div class="img-container" id="img-post" >
-                                    <img class="post" src="${posts[i].post}" alt="Self-portrait painting of ${posts[i].name}" id="post-${i}"> 
+                                    <img class="post" src="${posts[i].post}" alt="Self-portrait painting of ${posts[i].name}" 
+                                            id="post-el${i}" ondblclick="addLike('like-count-el${[i]}')"> 
                                 </div>
                                 <div class="comment-section">
                                     <div class="icon-section">
@@ -57,37 +58,74 @@ for(let i = 0; i < posts.length; i++) {
                                         <img class="comment-icons" src ="images/icon-comment.png">
                                         <img class="comment-icons" src ="images/icon-dm.png">
                                     </div>
-                                    <p class="like-section bold-text" id="like-count${[i]}">${posts[i].likes} likes</p>
+                                    <p class="like-section bold-text" id="like-count-el${[i]}">${posts[i].likes} likes</p>
                                     <p class="comment"><span class="bold-text" id="user-name">${posts[i].username}</span>${posts[i].comment}</p>
                                 </div>
                             </section> `;
     mainEl.append(createSectionEl); 
 }
 
-// Create variables 
-function createIdForEvntListeners() {
-    let clickPostArr = [];
-    for(let i = 0; i < posts.length; i++) {
-        clickPostArr.push(document.getElementById("post-"+[i]));        
-    }
-    return clickPostArr;
-}
-let check = createIdForEvntListeners();
-console.log(check[0]);
-// // let check = createIdForEvntListeners(); 
+// Add id's of img post & like count into an array. 
+// let clickPostArr = [];
+// let likeSectionArr = []; 
+// for(let i = 0; i < posts.length; i++) {
+//     clickPostArr.push(document.getElementById("post-el"+[i]));     
+//     likeSectionArr.push(document.getElementById("like-count-el"+[i]));
+// }
+// console.log(clickPostArr, likeSectionArr);
+// function imgPostIdArr() {
+//     let clickPostArr = [];
+//     let likeSectionArr = []; 
+//     for(let i = 0; i < posts.length; i++) {
+//         clickPostArr.push(document.getElementById("post-"+[i]));     
+//         likeSectionArr.push(document.getElementById("like-count"+[i]));
+//     }
+//     return clickPostArr;
+// }
+// let check = imgPostIdArr();
+
+// // let check = imgPostIdArr(); 
 // // console.log(check[0]);
-
-// console.log(createIdForEvntListeners());
-
-// const likeCountEl = document.getElementById("")
 
 
 // Create event listeners to listen for dbl clicks on each img post via id. Which is selected from the created variables matching the 
 // id post number generated from the for loop.
 // Increase the like count when double clicking the posts.
+
+// Put ondblclick attribute on img element with the id of the like section element as argument. 
+function addLike(likeId) {
+    const idNum = likeId.slice(-1);
+    console.log(idNum);
+    let incrLikeCnt = posts[idNum].likes ++; 
+    console.log(incrLikeCnt);
+    const likeSectionEl = document.getElementById(likeId); 
+    likeSectionEl.textContent = `${incrLikeCnt} likes`;
+}
+// clickPostArr.forEach(img => {
+//     img.addEventListener("dblclick", function() {
+//         // addLike()
+//         alert("img clicked");
+//         })
+//     })
+
+
+
+
+
+
+
+// function addEvntListeners() {
+//     const clickPosts = imgPostIdArr();
+//     clickPosts.forEach(img => {
+//         img.addEventListener("dblclick", function() {
+//             alert("img clicked")
+//         })
+//     })
+
+// }
 // function createEventListeners() {
     
-//     const clickPosts = createIdForEvntListeners();
+//     const clickPosts = imgPostIdArr();
 //     clickPosts.forEach(post => {
 //         post.addEventListener('dblclick', function() {
 
